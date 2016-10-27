@@ -8,8 +8,8 @@ public class Adivina {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Random random = new Random();
-		int numeroAleatorio = random.nextInt(10);
-		System.out.println("Adivina el numero crack maquina mastodonte fiera ");
+		int numeroAleatorio = random.nextInt(1000);
+		System.out.println("Adivina el numero ");
 		Scanner scanner = new Scanner(System.in);
 		int numero;
 		do {
@@ -17,10 +17,10 @@ public class Adivina {
 			String line = scanner.nextLine();
 			numero = Integer.parseInt(line);
 			if (numero < numeroAleatorio) 
-				System.out.println("Tira parriba");
+				System.out.println("El numero es más alto");
 			if (numero > numeroAleatorio)
-				System.out.println("Tira pabajo");
+				System.out.println("El numero es más bajo");
 		} while (numero != numeroAleatorio);
-		System.out.println("oleeeeeeeeee");
+		System.out.println("Lo adivinasteEEEEEEEEEEEEEEEEEEEEEEee!!!");
 	}
 }
